@@ -1,0 +1,16 @@
+.container {
+    height: 75vh;
+    background-size: cover;
+    position: relative;
+}
+
+    .container_box {
+        width: 30vw;
+        border-radius: 0;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+        padding: 3rem;
+        text-align: center;
+        position: relative;
+        top: 10%;
+        left: 30%
+    }
