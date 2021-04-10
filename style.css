@@ -27,10 +27,9 @@ NAVIGATION BAR
 }
 
     .nav-menu-left{
-        /* #TODO */
-        width: 170px;
+        width: 200px;
         height: 100px;
-        padding-left: 20px;
+        padding-left: 30px;
         padding-right: 20px;
     }
 
@@ -39,6 +38,7 @@ NAVIGATION BAR
         list-style-type: none;
         justify-content: right;
         align-items: center;
+        font-weight: bold;
     }
 
         .nav-menu-right-as-list{
@@ -56,7 +56,7 @@ NAVIGATION BAR
             color: #000000;
             background-color: #f5f6f7; /* From color picker */
         }
-        .active .nav-menu-right-as-list{
+        #active-page{
             color: #000000;
             background-color: #f5f6f7;
         }
@@ -111,7 +111,7 @@ SECTIONS
         border-radius: 0;
         background-color: white;
         box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
-        padding: 3rem;
+        padding-top: 3rem;
         text-align: center;
         position: relative;
         top: -6.5rem;
@@ -132,38 +132,31 @@ SECTIONS
             border-radius: 50%;
         }
 
-        #profile-pic {
+        .profile-pic {
             height: 7rem;
-            clip-path: circle(50%);
             border:  solid rgb(255, 255, 255);
-            border-radius:50%;
             top: -2rem;
             position: relative
         }
 
-        #heading{
+        #heading1, #heading2, #heading3, #heading4{
             font-size: 1.75rem;
             position: relative;
             text-align: center;
         }
 
-        .review{
-            text-align: center;
-        }
-
-        #name{
+        .name{
             color: #2577be;
             font-size: 18px;
             font-weight: 600;
         }
 
-        #date{
+        .date{
             color: #747779;
             font-size: 16px;
         }
 
-        #rating-box{
-            /* #TODO */
+        #rating-box1, #rating-box2, #rating-box3, #rating-box4{
             cursor: pointer;
             position: relative;
             left: 50%;
@@ -189,6 +182,12 @@ SECTIONS
             padding: 5px;
             color: white;
         }
+            .up{
+                background-color: #54b13f;
+            }
+            .down{
+                background-color: #e8402d;
+            }
 
         .text-rating{
             cursor: text;
@@ -203,8 +202,6 @@ SECTIONS
             font-size: 20px;
             align-items: center;
         }
-            #star{
-        }
 
             .starred{
                 color: #fad73c;
@@ -217,32 +214,120 @@ SECTIONS
                 padding-right: 5px;
             }
 
-        #info{
-            font-size: 16px;
-            padding: 2rem;
+        /* Implementation of the 'info' class which changes onClick from myFunctions.js */
+
+        .info{
+            cursor: pointer;
+            font-size: 18px;
+            text-align: left;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-top: 2rem;
+            position: relative;
+            height: 10rem;
+            background: -webkit-linear-gradient(#000000, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            overflow: hidden;
         }
 
-        #comment-button{
-            width: 100%;
+        .info-full{
+            cursor: text;
+            font-size: 18px;
+            text-align: left;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            padding-top: 2rem;
+            position: relative;
+            background: -webkit-linear-gradient(#000000, #000000);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            overflow: visible;
+            height: fit-content;
+        }
+
+        /* Comment */
+
+        .comment-data{
+            font-family: Open Sans, serif;
+            font-weight: bold;
+            width: 40%;
+            height: 100%;
+            border: 0;
+            background-color: #fad74a;
+            color: #216cae;
+            cursor: pointer;
+        }
+
+            .comment-button{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 70px;
+            }
+
+    #submit-comment-area1, #submit-comment-area2, #submit-comment-area3, #submit-comment-area4{
+        display: none;
+    }
+
+    .comment-box-textbox{
+        width: 70%;
+        height: 8rem;
+        padding: 1%;
+        font-family: Open Sans, serif;
+    }
+
+        #submit-button1, #submit-button2, #submit-button3, #submit-button4{
+            width: 40%;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 70px;
+            height: 40px;
+            margin-left: 30%;
         }
-            .comment-data{
-                font-family: Open Sans, serif;
-                font-weight: 600;
-                width: 40%;
-                height: 100%;
-                border: 0;
-                background-color: #fad74a;
-                color: #216cae;
-                cursor: pointer;
+
+        .hidden-comment-box{
+            display: none;
+        }
+
+            .clip-box-custom{
+                /* Clip-path drawn by taking reference from: https://bennettfeely.com/clippy/ */
+                clip-path: polygon(0 100%, 100% 100%, 100% 15%, 55% 15%, 50% 0, 45% 15%, 0 15%);
+                margin: 20px;
+                padding: 10% 10% 100px;
+                background-color: #edf0f2;
             }
 
-    .submit-comment{
-        /* #TODO */
-    }
+        .name-commentor{
+            top: 40px;
+            position: relative;
+            color: #4c4c4c;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .post-commentor{
+            position: relative;
+            top: 40px;
+            color: #4c4c4c;
+            font-size: 14px;
+        }
+
+        .profile-dp-commentor{
+            height:150px;
+            position: relative;
+            z-index: 10;
+            top: -120%;
+            border: 4px solid rgb(255, 255, 255);
+            border-radius: 50%;
+        }
+
+        .profile-pic-commentor {
+            height: 7rem;
+            top: 3rem;
+            position: relative;
+        }
+
 
 /* BOTTOM */
 .footer{
@@ -253,15 +338,18 @@ SECTIONS
     height: 0;
     color: #b9bec1;
     position: relative;
-    top: 2000px;
 }
 
     #myself{
         position: relative;
-        top: 2025px;
+        bottom: -30px;
     }
-    a{
+    #linkedin{
         color: #b9bec1;
         font-weight: bold;
         text-decoration-line: none;
     }
+        #linkedin:hover{
+            color: #2577be;
+            text-decoration-line: underline;
+        }
