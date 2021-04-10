@@ -1,134 +1,188 @@
 <!DOCTYPE HTML>
 <HTML lang="en">
-    <HEAD>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
-        <title>Anish Ghule</title>
+<HEAD>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Anish Ghule</title>
 
-        <!-- Linking CSS stylesheet -->
-        <link href="style.css" rel="stylesheet">
+    <!-- Linking CSS stylesheet -->
+    <link href="style.css" rel="stylesheet">
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <script src="https://use.fontawesome.com/2e30fbc94c.js"></script>
-        <script src="https://kit.fontawesome.com/94043cc48b.js" crossorigin="anonymous"></script>
-    </HEAD>
-    <BODY>
-        <!------------- SECTION: TOP ------------->
-        <section class="TOP">
-            <nav class="nav-container">
-                <div class="nav-menu-left">
-                <!-- #TODO implement the image -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://use.fontawesome.com/2e30fbc94c.js"></script>
+    <script src="https://kit.fontawesome.com/94043cc48b.js" crossorigin="anonymous"></script>
+</HEAD>
+<BODY>
+<!------------- SECTION: TOP ------------->
+<section class="TOP">
+    <nav class="nav-container">
+        <div class="nav-menu-left">
+
+        </div>
+
+        <ul class="nav-menu-right">
+            <li class="nav-menu-right-as-list">Dashboard</li>
+            <li class="nav-menu-right-as-list" id="review">Reviews</li>
+            <li class="nav-menu-right-as-list">Hotel Manager</li>
+            <li class="nav-menu-right-as-list">Settings</li>
+        </ul>
+    </nav>
+</section>
+
+<!------------- SECTION: MIDDLE ------------->
+<section class="MIDDLE">
+    <!---------WRAPPER BEGINS--------->
+    <div class="wrapper">
+        <!-- Data 1 -->
+        <div class="container-box" id="data1">
+            <div class="box-items" id="profile-pic"><img class="profile-dp" src="assets/reviewer1.jpg" alt="reviewer1"></div>
+            <div class="box-items" id="">
+                <div class="review" id="name"><h1>Clarence Kennedy</h1></div>
+                <div class="review" id="date">4th April, 1997</div>
+            </div>
+            <div class="box-items" id="heading">Lovely Place! Totally worth visiting</div>
+            <div class="box-items" id="rating-box">
+                <div class="thumb-rating">
+                    <i class="fas fa-thumbs-up"></i>
                 </div>
-
-                <ul class="nav-menu-right">
-                    <li class="nav-menu-right-as-list">Dashboard</li>
-                    <li class="nav-menu-right-as-list" id="review">Reviews</li>
-                    <li class="nav-menu-right-as-list">Hotel Manager</li>
-                    <li class="nav-menu-right-as-list">Settings</li>
-                </ul>
-            </nav>
-        </section>
-
-        <!------------- SECTION: MIDDLE ------------->
-        <section class="MIDDLE">
-            <div class="wrapper">
-                <div class="container-box" id="data1">
-                    <div class="box-items" id="profile-pic"><img class="profile-dp" src="assets/reviewer1.jpg" alt="reviewer1"></div>
-                    <div class="box-items" id="">
-                        <div class="review" id="name"><h1>Clarence Kennedy</h1></div>
-                        <div class="review" id="date">4th April, 1997</div>
-                    <div class="box-items" id="heading">Lovely Place! Totally worth visiting</div>
-                    <div class="box-items" id="rating-box">
-                        <div class="thumb-rating">
-                            <i class="fas fa-thumbs-up"></i>
-                        </div>
-                        <div class="linear-rating" id="star">
-                            <i class="fa fa-star starred"></i>
-                            <i class="fa fa-star starred"></i>
-                            <i class="fa fa-star starred"></i>
-                            <i class="fa fa-star starred"></i>
-                            <i class="fa fa-star unstarred"></i>
-                            <i class="fa fa-star unstarred"></i>
-                        </div>
-                        <div class="text-rating">
-                            4/6
-                        </div>
-                    </div>
-
-                    <div class="box-items" id="info">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.
-                        Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
-                        Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique
-                        senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
-                        Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque
-                        at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
-
-                    </div>
-
-                    <div class="box-items" id="comment-button">
-                        <button class="comment-data" onclick="comment1()">ADD COMMENT</button>
-                    </div>
-
-                    #TODO
-
-                    <input type="text" class="comment-box-text" id="comment-box-text">
-                    <!-- #TODO in button-->
-                    <button class="submit-comment"> onclick="submitComment()"> COMMENT </button>
+                <div class="linear-rating" id="star">
+                    <i class="fa fa-star starred"></i>
+                    <i class="fa fa-star starred"></i>
+                    <i class="fa fa-star starred"></i>
+                    <i class="fa fa-star starred"></i>
+                    <i class="fa fa-star unstarred"></i>
+                    <i class="fa fa-star unstarred"></i>
+                </div>
+                <div class="text-rating">
+                    4/6
                 </div>
             </div>
 
-            <br><br><br><br><br>
-
-            <!-- Data2 -->
-                <div class="container-box" id="data2">
-                    <div class="box-items" id="profile-pic"> #TODO </div>
-                    <div class="box-items" id="">
-                        <div class="review" id="name"><h1>Douglas Loyd</h1></div>
-                        <div class="review" id="date">11th November, 2021</div>
-                        <div class="box-items" id="heading">Lovely Place! Totally worth visiting</div>
-                        <div class="box-items" id="rating-box">
-                            <div class="thumb-rating">
-                                <i class="fas fa-thumbs-up"></i>
-                            </div>
-                            <div class="linear-rating" id="star">
-                                <i class="fa fa-star starred"></i>
-                                <i class="fa fa-star starred"></i>
-                                <i class="fa fa-star starred"></i>
-                                <i class="fa fa-star starred"></i>
-                                <i class="fa fa-star unstarred"></i>
-                                <i class="fa fa-star unstarred"></i>
-                            </div>
-                        </div>
-
-                        <div class="box-items" id="info">
-                            #TODO
-                        </div>
-
-                        <div class="box-items" id="comment-button">
-                            <button class="comment-data" onclick="comment1()">ADD COMMENT</button>
-                        </div>
-
-                        #TODO
-
-                        <input type="text" class="comment-box-text" id="comment-box-text">
-                        <!-- #TODO in button-->
-                        <button class="submit-comment"> onclick="submitComment()"> COMMENT </button>
-                    </div>
-                </div>
-        </section>
-
-        <section class="BOTTOM">
-            <div class="footer">
-                &#169; 1999 - 2016 HolidayCheck AG
+            <div class="box-items" id="info">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.
+                Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+                Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique
+                senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+                Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque
+                at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
             </div>
-            <div class="footer" id="myself">
-                Developed with <i class="fas fa-heart"></i>, <a href="https://www.linkedin.com/in/anishghule-technogeek/"> Anish</a>
+
+            <div class="box-items" id="comment-button">
+                <button class="comment-data" onclick="comment1()">ADD COMMENT</button>
             </div>
-        </section>
-    </BODY>
+
+            <!-- #TODO -->
+
+            <input type="text" class="comment-box-text" id="comment-box-text">
+            <!-- #TODO in button-->
+            <button class="submit-comment" onclick="submitComment()">COMMENT</button>
+        </div>
+    </div>
+
+    <br><br><br><br><br>
+
+    <!-- Data2 -->
+    <!-- <div class="container-box" id="data2">
+        <div class="box-items" id="profile-pic"> <!-- #TODO __> </div>
+        <div class="box-items" id="">
+            <div class="review" id="name"><h1>Douglas Loyd</h1></div>
+            <div class="review" id="date">11th November, 2021</div>
+        </div>
+        <div class="box-items" id="heading">Lovely Place! Totally worth visiting</div>
+        <div class="box-items" id="rating-box">
+            <div class="thumb-rating">
+                <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="linear-rating" id="star">
+                <i class="fa fa-star starred"></i>
+                <i class="fa fa-star starred"></i>
+                <i class="fa fa-star starred"></i>
+                <i class="fa fa-star starred"></i>
+                <i class="fa fa-star unstarred"></i>
+                <i class="fa fa-star unstarred"></i>
+            </div>
+        </div>
+
+        <div class="box-items" id="info">
+            #TODO
+        </div>
+
+        <div class="box-items" id="comment-button">
+            <button class="comment-data" onclick="comment1()">ADD COMMENT</button>
+        </div>
+
+        #TODO
+
+        <input type="text" class="comment-box-text" id="comment-box-text">
+        <!-- #TODO in button __>
+        <button class="submit-comment"> onclick="submitComment()"> COMMENT </button>
+    </div>
+    </div>
+    </div>
+    -->
+
+    <div class="container-box" id="data1">
+        <div class="box-items" id="profile-pic"><img class="profile-dp" src="assets/reviewer1.jpg" alt="reviewer1"></div>
+        <div class="box-items" id="">
+            <div class="review" id="name"><h1>Clarence Kennedy</h1></div>
+            <div class="review" id="date">4th April, 1997</div>
+        </div>
+        <div class="box-items" id="heading">Lovely Place! Totally worth visiting</div>
+        <div class="box-items" id="rating-box">
+            <div class="thumb-rating">
+                <i class="fas fa-thumbs-up"></i>
+            </div>
+            <div class="linear-rating" id="star">
+                <i class="fa fa-star starred"></i>
+                <i class="fa fa-star starred"></i>
+                <i class="fa fa-star starred"></i>
+                <i class="fa fa-star starred"></i>
+                <i class="fa fa-star unstarred"></i>
+                <i class="fa fa-star unstarred"></i>
+            </div>
+            <div class="text-rating">
+                4/6
+            </div>
+        </div>
+
+        <div class="box-items" id="info">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa.
+            Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.
+            Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique
+            senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.
+            Aenean nec lorem. In porttitor. Donec laoreet nonummy augue. Suspendisse dui purus, scelerisque
+            at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.
+        </div>
+
+        <div class="box-items" id="comment-button">
+            <button class="comment-data" onclick="comment1()">ADD COMMENT</button>
+        </div>
+
+        <!-- #TODO -->
+
+        <input type="text" class="comment-box-text" id="comment-box-text">
+        <!-- #TODO in button-->
+        <button class="submit-comment" onclick="submitComment()">COMMENT</button>
+    </div>
+    </div>
+
+    <br><br><br><br><br>
+
+
+</section>
+
+<section class="BOTTOM">
+    <div class="footer">
+        &#169; 1999 - 2016 HolidayCheck AG
+    </div>
+    <div class="footer" id="myself">
+        Developed with <i class="fas fa-heart"></i>|| <a href="https://www.linkedin.com/in/anishghule-technogeek/"> Anish</a>
+    </div>
+</section>
+</BODY>
 </HTML>
