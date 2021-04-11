@@ -1,5 +1,7 @@
 # Frontend Assignment Completed:pencil:
 
+### Webpage hosted on http://frontend-acm.000webhostapp.com/
+
 ### Implementation of page (provided in assests folder with the name design.png) completed, satisfying the following requirements:
 
 * Assumption: The data is already returned from JSON service.
@@ -16,5 +18,3 @@
 * It's only client side "application" :)
 
 Enjoyed the task!
-
-### Webpage hosted on http://frontend-acm.000webhostapp.com/
